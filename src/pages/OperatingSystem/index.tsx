@@ -80,6 +80,7 @@ const UploaderPage = Pages.uploader
 const ManagePage = Pages.manager
 const AuctionPage = Pages.auction
 const MintPage = Pages.mint
+const RevealPage = Pages.reveal
 
 export default function OperatingSystem() {
   const location = useLocation()
@@ -193,6 +194,10 @@ export default function OperatingSystem() {
                 <DesktopIcon normalState={ManagePage?.icon?.src} onClick={() => handleOpen(ManagePage?.id as PageKey)}>
                   {' '}
                   {ManagePage?.label}{' '}
+                </DesktopIcon>
+                <DesktopIcon normalState={RevealPage?.icon?.src} onClick={() => handleOpen(RevealPage?.id as PageKey)}>
+                  {' '}
+                  {RevealPage?.label}{' '}
                 </DesktopIcon>
               </div>
 

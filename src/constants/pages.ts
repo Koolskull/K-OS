@@ -88,6 +88,16 @@ const Pages: Record<string, Page> = {
       height: 720,
     },
   },
+  reveal: {
+    id: 'reveal',
+    path: '/reveal',
+    label: 'Reveal',
+    icon: AuctionIcon[0],
+    minSize: {
+      width: 800,
+      height: 720,
+    },
+  },
 }
 
 export default Pages

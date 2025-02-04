@@ -47,6 +47,7 @@
     "react-use-websocket": "^4.3.1",
     "rebass": "^4.0.7",
     "redux-localstorage-simple": "^2.5.1",
+    "reveal.js": "^5.1.0",
     "shadertoy-react": "^1.1.2",
     "styled-components": "^5.3.6",
     "three": "^0.153.0",
@@ -73,6 +74,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
     "@types/rebass": "^4.0.10",
+    "@types/reveal.js": "^5.0.5",
     "@types/styled-components": "^5.1.26",
     "@types/three": "^0.152.1",
     "@types/tinycolor2": "^1.4.3",
@@ -108,5 +110,6 @@
     "vite-plugin-image-presets": "^0.3.4",
     "vite-plugin-node-polyfills": "^0.9.0",
     "vite-plugin-svgr": "^2.4.0"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }

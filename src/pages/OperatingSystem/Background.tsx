@@ -41,7 +41,7 @@ const BackgroundStyled = styled.div`
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: #85669f;
+  background-color: #000000;
 `
 
 const OSInfo = styled.div`
@@ -50,7 +50,6 @@ const OSInfo = styled.div`
 `
 
 export default function Background() {
-  const [waves] = useWaves()
   const { account, balance } = useAccount()
   const clusterName = useClusterName(account?.address)
   const ens = useEnsName({ address: account?.address })
@@ -59,8 +58,8 @@ export default function Background() {
     <BackgroundStyled>
       <ButtonContainer>
         <OSInfo>
-          <p>MiyaOS</p>
-          <p>Version 1.0.0</p>
+          <p>K-OS</p>
+          <p>Version 4.4.4</p>
           {account?.isConnected && (
             <>
               {clusterName ? <p>{clusterName}</p> : !!ens.data && <p>{ens.data}</p>}
@@ -71,9 +70,6 @@ export default function Background() {
       </ButtonContainer>
       <GradientBlock />
       {/* render the shader only if the user has enabled it */}
-      {waves && (
-        <ShadertoyReact fs={fs} devicePixelRatio={0.5} style={{ opacity: 0.1, position: 'relative', zIndex: 1 }} />
-      )}
     </BackgroundStyled>
   )
 }
