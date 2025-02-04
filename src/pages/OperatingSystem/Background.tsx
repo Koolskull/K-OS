@@ -2,7 +2,7 @@ import ShadertoyReact from 'shadertoy-react'
 import styled from 'styled-components/macro'
 import { useEnsName } from 'wagmi'
 
-import { useAccount } from '@/context/AccountProvider'
+import { useAccount } from '@/context/AccountProvider'h
 import { useWaves } from '@/store/experience/hooks'
 
 // import { fs } from './webgl'
