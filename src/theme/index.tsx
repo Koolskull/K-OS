@@ -54,13 +54,13 @@ function colors(darkMode: boolean): Colors {
 
     // backgrounds / greys
     neutral0: '#FFF',
-    neutral100: '#F1F4F9',
-    neutral200: '#E2E8F0',
-    neutral300: '#CBD5E0',
-    neutral500: '#8496AE',
-    neutral600: '#68778D',
-    neutral700: '#4A5568',
-    neutral900: 'ffffff',
+    neutral100: '#ffffff',
+    neutral200: '#ffffff',
+    neutral300: '#ffffff',
+    neutral500: '#ffffff',
+    neutral600: '#ffffff',
+    neutral700: '#ffffff',
+    neutral900: '#ffffff',
   }
 }
 
@@ -107,7 +107,7 @@ function theme(darkMode: boolean): DefaultTheme {
 }
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const darkMode = false
+  const darkMode = true
 
   const themeObject = useMemo(() => theme(darkMode), [darkMode])
 
@@ -154,7 +154,7 @@ export const ThemedText = {
 export const ThemedGlobalStyle = createGlobalStyle`
   
 @font-face {
-  font-family: 'W95FA';
+  font-family: courier;
   src: url("/fonts/w95fa/w95fa.woff");
 }
 
@@ -169,7 +169,7 @@ export const ThemedGlobalStyle = createGlobalStyle`
 }
 
 html {
-  color: ${({ theme }) => theme.neutral900};
+  color: #ffffff;
   background-repeat: no-repeat;
   height: 100%;
   //max-width: 43em;
@@ -204,7 +204,7 @@ img {
 }
 
 img:hover {
-  border: 1px solid purple;
+  border: 1px solid green;
 }
 
 /* Scrollbar Width */
