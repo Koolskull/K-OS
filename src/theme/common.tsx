@@ -10,7 +10,7 @@ const MBox = styled.div<{ alternative?: boolean }>`
 `
 
 const Bar = styled.div`
-  background: #00cc00;
+  background: #333333;
   color: white;
   font-family: Courier;
 `

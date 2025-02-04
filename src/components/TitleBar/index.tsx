@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 import { HighlightButton } from '../Button'
 
 const StyledTitleBar = styled.div`
-  background: #00cc00;
+  background: #444444;
   color: white;
   cursor: grab;
   display: flex;

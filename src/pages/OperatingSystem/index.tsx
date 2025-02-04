@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-import MiyaLogo from 'assets/134321870.png'
+import KSLogo from 'assets/KS.png'
 import Folder from 'assets/folder.png?preset=thumbnail&resize=true'
 import FolderOpen from 'assets/folder_open.png?preset=thumbnail&resize=true'
 import CreateNew from 'assets/miyamints1.png?preset=thumbnail&resize=true'
@@ -177,7 +177,7 @@ export default function OperatingSystem() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start', gap: '2rem' }}>
               <div style={{ display: 'flex', justifyContent: 'center', padding: '0 0', gap: '2rem' }}>
-                <DesktopIcon normalState={MiyaLogo} onClick={() => handleOpen('home')}>
+                <DesktopIcon normalState={KSLogo} onClick={() => handleOpen('home')}>
                   Net
                   <br />
                   Explorer

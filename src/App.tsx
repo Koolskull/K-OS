@@ -31,7 +31,7 @@ const { chains, publicClient } = configureChains([mainnet, goerli, sepolia], [pu
 const readTheme = merge(lightTheme(), {
   colors: {
     modalBackground: '#a3a3a3',
-    accentColor: '#00cc00',
+    accentColor: '#333333',
     selectedOptionBorder: '#000',
   },
   fonts: {
