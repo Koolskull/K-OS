@@ -2,27 +2,26 @@
  * GLOBAL STYLES
  *********************************************/
 
- 
- :root {
+:root {
   --r-background-color: #000000;
-  --r-main-font:  courier;
+  --r-main-font: courier;
   --r-main-font-size: 14px;
   --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font:  courier;
+  --r-heading-font: courier;
   --r-heading-color: #fff;
   --r-heading-line-height: 1;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
-  --r-heading-text-shadow:  0 0 10px #888, 0 0 20px #888, 0 0 30px #888;
+  --r-heading-text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888;
   --r-heading-font-weight: 600;
   --r-heading1-text-shadow: 0 0 10px #888, 0 0 20px #888, 0 0 30px #888;
   --r-heading1-size: 2em;
   --r-heading2-size: 1em;
   --r-heading3-size: 1em;
   --r-heading4-size: 1em;
-  --r-code-font:  courier;
+  --r-code-font: courier;
   --r-link-color: #fff;
   --r-link-color-dark: #bbb;
   --r-link-color-hover: #fff;
@@ -37,7 +36,8 @@
 }
 
 /* Full-page background GIF */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ html, body {
 }
 
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -275,13 +275,13 @@ body::before {
   border-bottom: 1px solid;
 }
 
-.reveal table th[align=center],
-.reveal table td[align=center] {
+.reveal table th[align='center'],
+.reveal table td[align='center'] {
   text-align: center;
 }
 
-.reveal table th[align=right],
-.reveal table td[align=right] {
+.reveal table th[align='right'],
+.reveal table td[align='right'] {
   text-align: right;
 }
 
@@ -378,31 +378,30 @@ body::before {
   }
 }
 
-img { 
-  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-  image-rendering: -moz-crisp-edges;          /* Firefox                        */
-  image-rendering: -o-crisp-edges;            /* Opera                          */
+img {
+  image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges; /* Firefox                        */
+  image-rendering: -o-crisp-edges; /* Opera                          */
   image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: pixelated;                 /* Universal support since 2021   */
-  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-
+  image-rendering: pixelated; /* Universal support since 2021   */
+  image-rendering: optimize-contrast; /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
 }
 
 .glow-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-        .glow-wrapper img {
-            display: block;
-        }
-        .glow-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            mix-blend-mode: screen;
-            filter: blur(8px);
-            opacity: 0.7;
-        }
+  position: relative;
+  display: inline-block;
+}
+.glow-wrapper img {
+  display: block;
+}
+.glow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: screen;
+  filter: blur(8px);
+  opacity: 0.7;
+}

@@ -183,27 +183,6 @@ export default function Windows({
           {children}
         </DummyWindow>
       </DraggableWrapper>
-      {!mobile &&
-        dummyWindowsArray.map((element, i) => {
-          return (
-            <DummyWindow
-              key={`${identifier}-trail-${i}`}
-              style={{
-                position: 'absolute',
-                height: mobile ? 'auto' : baseSize.height,
-                width: mobile ? 'auto' : baseSize.width,
-                zIndex: baseDepth + i,
-                transform: `translateX(${element.x}px) translateY(${element.y}px)`,
-                userSelect: 'none',
-                pointerEvents: 'none',
-                visibility: initialized ? 'visible' : 'hidden',
-                overflow: 'hidden',
-              }}
-            >
-              {children}
-            </DummyWindow>
-          )
-        })}
     </>
   ) : (
     <div style={{ visibility: 'hidden' }}>{children}</div>

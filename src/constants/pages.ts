@@ -95,7 +95,7 @@ const Pages: Record<string, Page> = {
     icon: AuctionIcon[0],
     minSize: {
       width: 800,
-      height: 720,
+      height: 800,
     },
   },
 }

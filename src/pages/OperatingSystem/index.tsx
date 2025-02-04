@@ -3,7 +3,6 @@ import MiyaLogo from 'assets/134321870.png'
 import Folder from 'assets/folder.png?preset=thumbnail&resize=true'
 import FolderOpen from 'assets/folder_open.png?preset=thumbnail&resize=true'
 import CreateNew from 'assets/miyamints1.png?preset=thumbnail&resize=true'
-import { Fragment, useEffect, useMemo } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components/macro'
@@ -21,8 +20,8 @@ import getMediaKey from '@/utils/getMediaKey'
 
 import Background from './Background'
 import DesktopIcon from './DesktopIcon'
-import FourthWall from './FourthWall'
 import Windows from './Windows'
+import { useMemo, useEffect } from 'react'
 
 const Foreground = styled.div`
   position: relative;
@@ -139,18 +138,16 @@ export default function OperatingSystem() {
     return windows.map((window) => {
       const page = Pages[window]!
       return (
-        <Fragment key={`${window}-window`}>
-          <Windows
-            minimized={minimized.includes(window)}
-            mobile={isMobile || fullScreen.includes(window)}
-            baseDepth={zindex.indexOf(window) * 1000 + 2000}
-            identifier={window}
-            baseSize={page.minSize}
-            onClick={() => zindex.indexOf(window) !== zindex.length - 1 && dispatch(setToFront({ value: window }))}
-          >
-            <DynamicWrapper identifier={window} />
-          </Windows>
-        </Fragment>
+        <Windows
+          minimized={minimized.includes(window)}
+          mobile={isMobile || fullScreen.includes(window)}
+          baseDepth={zindex.indexOf(window) * 1000 + 2000}
+          identifier={window}
+          baseSize={page.minSize}
+          onClick={() => zindex.indexOf(window) !== zindex.length - 1 && dispatch(setToFront({ value: window }))}
+        >
+          <DynamicWrapper identifier={window} />
+        </Windows>
       )
     })
   }, [windows, zindex, fullScreen, isMobile, minimized])
@@ -238,7 +235,6 @@ export default function OperatingSystem() {
         </Icons>
       </Foreground>
       <TaskBar active={windows} focus={zindex[zindex.length - 1]} onClick={(id) => handleTaskbar(id)} />
-      <FourthWall />
     </div>
   )
 }

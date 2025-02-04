@@ -25,7 +25,7 @@ const Wrapper = styled.fieldset`
   }
 
   * {
-    font-family: 'W95FA', sans-serif;
+    font-family: Courier, sans-serif;
     letter-spacing: 1px;
   }
 `

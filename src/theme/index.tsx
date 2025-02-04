@@ -60,7 +60,7 @@ function colors(darkMode: boolean): Colors {
     neutral500: '#8496AE',
     neutral600: '#68778D',
     neutral700: '#4A5568',
-    neutral900: '#202327',
+    neutral900: 'ffffff',
   }
 }
 

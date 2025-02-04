@@ -2,7 +2,7 @@ import ShadertoyReact from 'shadertoy-react'
 import styled from 'styled-components/macro'
 import { useEnsName } from 'wagmi'
 
-import { useAccount } from '@/context/AccountProvider'h
+import { useAccount } from '@/context/AccountProvider'
 import { useWaves } from '@/store/experience/hooks'
 
 // import { fs } from './webgl'
@@ -16,7 +16,14 @@ const GradientBlock = styled.div`
   z-index: 5;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, #6873d3, #7c6ba0 45%, rgba(0, 0, 0, 0));
+  background-image: url('https://koolskull.com/screenglitch.gif');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  opacity: 0.15; /* Adjust this value to control the GIF opacity */
 `
 
 const ButtonContainer = styled.div`

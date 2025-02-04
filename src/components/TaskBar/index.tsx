@@ -17,7 +17,7 @@ const NoScroll = styled.div`
 const TaskBarStyled = styled.div`
   position: relative;
   z-index: 10;
-  background-color: #a9a3c9;
+  background-color: #000000;
   height: 30px;
   padding: 2px 4px;
   display: flex;
@@ -25,7 +25,7 @@ const TaskBarStyled = styled.div`
   align-items: center;
   gap: 4px;
   font-weight: 600;
-  box-shadow: 0 0 0px 1px white, 0 1px 0px 1px #a9a3c9;
+  box-shadow: 0 0 0px 1px white, 0 1px 0px 1px #a3a3a3;
   overflow: auto;
   margin-top: 2px;
 `

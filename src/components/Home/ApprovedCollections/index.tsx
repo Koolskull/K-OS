@@ -49,7 +49,7 @@ const Description = styled.p`
   font-size: smaller;
   width: 80%;
   max-height: 100%;
-  color: #d97ada;
+  color: #00cc00;
   padding: 0.5rem;
 `
 

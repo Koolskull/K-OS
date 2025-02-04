@@ -30,8 +30,8 @@ const { chains, publicClient } = configureChains([mainnet, goerli, sepolia], [pu
 
 const readTheme = merge(lightTheme(), {
   colors: {
-    modalBackground: '#a9a3c9',
-    accentColor: '#d97ada',
+    modalBackground: '#a3a3a3',
+    accentColor: '#00cc00',
     selectedOptionBorder: '#000',
   },
   fonts: {
@@ -89,25 +89,22 @@ const client = new ApolloClient({
 export default function App() {
   return (
     <>
-
       <ApolloProvider client={client}>
-      <Provider store={store}>
-        <WagmiConfig config={wagmiClient}>
-          <AccountProvider>
-            <ClustersProvider>
-              <RainbowKitProvider chains={chains} theme={readTheme}>
-                <ThemeProvider>
-                  <ThemedGlobalStyle />
-                  <Router />
-                </ThemeProvider>
-              </RainbowKitProvider>
-
-             </ClustersProvider>
+        <Provider store={store}>
+          <WagmiConfig config={wagmiClient}>
+            <AccountProvider>
+              <ClustersProvider>
+                <RainbowKitProvider chains={chains} theme={readTheme}>
+                  <ThemeProvider>
+                    <ThemedGlobalStyle />
+                    <Router />
+                  </ThemeProvider>
+                </RainbowKitProvider>
+              </ClustersProvider>
             </AccountProvider>
           </WagmiConfig>
         </Provider>
       </ApolloProvider>
-
     </>
   )
 }
