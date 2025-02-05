@@ -1,7 +1,7 @@
 {
-  "name": "miya.wtf",
+  "name": "k-os",
   "private": true,
-  "version": "0.0.3",
+  "version": "4.4.4",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

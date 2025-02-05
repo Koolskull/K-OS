@@ -64,8 +64,8 @@ const Pages: Record<string, Page> = {
     label: 'Infinite Upload',
     icon: ExecutableIcon[0],
     minSize: {
-      width: 600,
-      height: 475,
+      width: 888,
+      height: 775,
     },
   },
   manager: {
@@ -95,7 +95,17 @@ const Pages: Record<string, Page> = {
     icon: AuctionIcon[0],
     minSize: {
       width: 800,
-      height: 800,
+      height: 720,
+    },
+  },
+  mialien: {
+    id: 'mialien',
+    path: '/mialien',
+    label: 'Mialien',
+    icon: AuctionIcon[0],
+    minSize: {
+      width: 800,
+      height: 720,
     },
   },
 }

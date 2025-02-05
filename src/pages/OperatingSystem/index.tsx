@@ -80,6 +80,7 @@ const ManagePage = Pages.manager
 const AuctionPage = Pages.auction
 const MintPage = Pages.mint
 const RevealPage = Pages.reveal
+const MialienPage = Pages.mialien
 
 export default function OperatingSystem() {
   const location = useLocation()
@@ -195,6 +196,13 @@ export default function OperatingSystem() {
                 <DesktopIcon normalState={RevealPage?.icon?.src} onClick={() => handleOpen(RevealPage?.id as PageKey)}>
                   {' '}
                   {RevealPage?.label}{' '}
+                </DesktopIcon>
+                <DesktopIcon
+                  normalState={MialienPage?.icon?.src}
+                  onClick={() => handleOpen(MialienPage?.id as PageKey)}
+                >
+                  {' '}
+                  {MialienPage?.label}{' '}
                 </DesktopIcon>
               </div>
 
