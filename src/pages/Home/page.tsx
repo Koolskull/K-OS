@@ -70,6 +70,7 @@ export default function Home() {
           KOOLSKULL - A THRASH CREATION BY THE LORD THY GOD THROUGH HIS DEDICATED HUMAN SERVANT VESSEL JUAN MANUEL
           LARRAZABAL SINCE 2007
         </Banner>
+        <iframe src="https://koolskull.com" width="100%" height="100%"></iframe>
       </AppContainer>
     </Bg>
   )

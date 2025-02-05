@@ -56,7 +56,7 @@ export default function MintPage() {
           height: 'calc(100% - 1.5rem)',
         }}
       >
-        <ProgressBarUploader request={uploadRequest} onRequest={(value) => finalize(value)} />
+        <iframe src="https://stardrain.app/" width="100%" height="100%"></iframe>
       </div>
     </WindowWrapper>
   )
